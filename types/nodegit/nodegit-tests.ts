@@ -1,7 +1,7 @@
 import * as Git from 'nodegit';
 
 Git.Repository.discover('startPath', 1, 'ceilingDirs').then(string => {
-    // Use string
+    string; // $ExpectType string
 });
 
 Git.Repository.init('path', 0).then(repository => {
